@@ -24,7 +24,7 @@ class Director:
             self (Director): An instance of Director.
         """
         self._is_alive = True
-        #self._is_playing = True
+        self._word_found = False
         #self._lives = lives_num
 
 
@@ -48,7 +48,7 @@ class Director:
         
         
         
-        self.word_string = ["_", "_", "_", "_", "_"]
+
         word = Letters_tracker()
 
         
