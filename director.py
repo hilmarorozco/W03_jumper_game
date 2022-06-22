@@ -45,12 +45,17 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        
+        print("It kind of works")
         
         
 
         word = Letters_tracker()
 
+    def _play_game(self):
+        """ text here
         
+        Args:
+            self (Director): An instance of Director.
+        """
 
 
