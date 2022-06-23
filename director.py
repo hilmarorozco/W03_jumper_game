@@ -23,21 +23,23 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        self._is_alive = True
-        self._word_found = False
+        #self._is_alive = True
+
+        self.tracker = Letters_tracker()
+
         #self._lives = lives_num
 
-
+# 
     def start_game(self):
         """Starts the game by running the main game loop.
         
         Args:
             self (Director): an instance of Director.
         """
-        while self._is_alive == True:
-            self._play_game()
-            #self._do_updates()
-            #self._do_outputs()
+        print("start game")
+
+        self._play_game()
+
 
     def _play_game(self):
         """ text here
@@ -45,17 +47,22 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        print("It kind of works")
+        self.tracker.word_tracker()
+
+        #print("It kind of works")
         
         
 
-        word = Letters_tracker()
 
-    def _play_game(self):
-        """ text here
+
+    # def _word_found(self):
+    #     """ text here
         
-        Args:
-            self (Director): An instance of Director.
-        """
+    #     Args:
+    #         self (Director): An instance of Director.
+    #     """
+        #tracker = Letters_tracker()
+
+
 
 
